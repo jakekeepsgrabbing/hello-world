@@ -1,6 +1,10 @@
+var y = 10;
+var xx = 0;
+var xxx = 380;
+var yy = 10;
 while(y < 300 && xx < 400) {
     stroke(255, 0, 0);
     line(xxx, yy, xx, y);   
-    yy += 100;
-    xx += 10;
+    yy += 10;
+    xx += 5;
 }
