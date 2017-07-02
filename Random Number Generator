@@ -1,0 +1,27 @@
+//theNumber
+var theNumber = random(-10.0, 10.0);
+//rectvars
+var x = 0;
+var y = 1;
+var w = 105;
+var h = 23;
+
+fill(0, 0, 0);
+textSize(20);
+text("Analysis of: " + theNumber, 0, 20);
+text("It's zero.", 0, 50);
+text("It's positive.", 0, 75);
+text("It's negative.", 0, 100);
+//IFZERO
+if (theNumber === 0) {w = w - 50;}
+if (theNumber === 0) {y = y + 10;}
+//IFPOS
+if (theNumber > 0) {y = y + 54;}
+if (theNumber > 0) {w = w + 0;}
+//IFNEG
+if (theNumber < 0) {y = y + 79;}
+if (theNumber < 0) {w = w + 7;}
+line(0, 21, 100, 21);
+noFill();
+rect(x, y, w, h);
+
