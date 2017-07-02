@@ -1,0 +1,5 @@
+while(y < 300 && xx < 400) {
+    stroke(255, 0, 0);
+    line(xxx, yy, xx, y);   
+    yy += 100;
+    xx += 10;
